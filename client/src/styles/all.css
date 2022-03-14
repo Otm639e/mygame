@@ -1,0 +1,170 @@
+h1 {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: 500;
+  color: #464646;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font: 100% "Rubik", sans-serif;
+  color: #464646;
+  background-color: #F0F0F0;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: #222222;
+  z-index: 100;
+}
+
+#homepage_wrapper {
+  position: relative;
+  padding-top: 60px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#homepage_wrapper #homepage_events {
+  margin-top: 20px;
+  position: relative;
+  width: 300px;
+  height: 450px;
+  background-color: #FCFCFC;
+  border-radius: 20px;
+  border: 1px solid #DDDDDD;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#homepage_wrapper #homepage_updates_wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  width: 460px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+#homepage_wrapper #homepage_updates_wrapper #update_title_wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#homepage_wrapper #homepage_updates_wrapper #homepage_update {
+  margin-top: 20px;
+  position: relative;
+  width: 90%;
+  padding: 0 5%;
+  height: 50px;
+  background-color: #FCFCFC;
+  margin-bottom: 20px;
+  border-radius: 40px;
+  border: 1px solid #DDDDDD;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#homepage_wrapper #homepage_updates_wrapper #homepage_update_exit_button {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #464646;
+  border-radius: 100%;
+  z-index: 99;
+}
+#homepage_wrapper #homepage_updates_wrapper #homepage_update_exit_button:hover {
+  background-color: #AAAAAA;
+}
+#homepage_wrapper #homepage_updates_wrapper #homepage_update_textbox {
+  position: relative;
+  width: 90%;
+  height: 180px;
+  resize: none;
+}
+#homepage_wrapper #homepage_updates_wrapper #homepage_imageorPost_wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+#homepage_wrapper #homepage_updates_wrapper #homepage_addImage {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  background-color: #464646;
+  border-radius: 20%;
+  outline-style: none;
+  border: none;
+  cursor: pointer;
+}
+#homepage_wrapper #homepage_updates_wrapper #homepage_postupdate {
+  position: relative;
+  width: 65px;
+  height: 35px;
+  background-color: #C1DBA1;
+  border-radius: 20%;
+  outline-style: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  color: #464646;
+}
+#homepage_wrapper #homepage_updates_wrapper #homepage_postupdate:hover {
+  box-shadow: 0 1px 3px grey;
+}
+#homepage_wrapper #homepage_updates_wrapper .line_style {
+  height: 0;
+  width: 100%;
+  border: 1px solid #BBBBBB;
+  margin-bottom: 20px;
+}
+#homepage_wrapper #homepage_updates_wrapper .updates {
+  position: relative;
+  width: 90%;
+  background-color: #FCFCFC;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 1px solid #DDDDDD;
+  padding: 5%;
+}
+#homepage_wrapper #homepage_updates_wrapper .updates p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+#homepage_wrapper #homepage_personal_info {
+  margin-top: 20px;
+  position: relative;
+  width: 300px;
+  height: 450px;
+  background-color: #FCFCFC;
+  border-radius: 20px;
+  border: 1px solid #DDDDDD;
+}
+
+/*# sourceMappingURL=all.css.map */
