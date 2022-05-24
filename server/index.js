@@ -22,7 +22,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 /**
  * We pass the route, require, and response.
- * res: we use to respond and send to front end. req: is used to get info from front-end
+ * res (response): we use to respond and send to front-end. 
+ * req (request): is used to get info from front-end
  * app.get('/', (req, res) => {
  *      const sqlInsert = "INSERT INTO posts (post) VALUES ('Hello');";
  *      db.query(sqlInsert, (err, result)=> {
@@ -60,7 +61,16 @@ app.post('/api/insert', (req, res) => {
         if (err) {
             throw err;
         };
-        console.log(result);
+    });
+});
+
+app.delete('/api/delete/:id', (req, res) => {
+    const id = req.params.id;
+    const sqlDelete = "DELETE FROM posts where id = ?;";
+    db.query(sqlDelete, [id], (err, result)=> {
+        if (err) {
+            throw err;
+        };
     });
 });
 

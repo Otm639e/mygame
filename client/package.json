@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "axios": "^0.26.0"
+  },
+  "scripts": {
+    "sass": "sass --watch src/sass/all.scss src/styles/all.css"
   }
+
 }

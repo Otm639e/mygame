@@ -26,18 +26,17 @@ body {
 }
 
 #header {
-  position: fixed;
+  position: relative;
   width: 100%;
-  height: 60px;
+  height: 10%;
   background-color: #222222;
   z-index: 100;
 }
 
 #homepage_wrapper {
   position: relative;
-  padding-top: 60px;
   width: 100%;
-  height: 100%;
+  height: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -111,7 +110,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 10px;
+  padding: 10px 0;
 }
 #homepage_wrapper #homepage_updates_wrapper #homepage_addImage {
   position: relative;
@@ -153,6 +152,16 @@ body {
   border: 1px solid #DDDDDD;
   padding: 5%;
 }
+#homepage_wrapper #homepage_updates_wrapper .updates div {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  font-size: 1.5rem;
+}
+#homepage_wrapper #homepage_updates_wrapper .updates div:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
 #homepage_wrapper #homepage_updates_wrapper .updates p {
   margin: 0;
   font-size: 0.8rem;
@@ -165,6 +174,17 @@ body {
   background-color: #FCFCFC;
   border-radius: 20px;
   border: 1px solid #DDDDDD;
+}
+
+@media only screen and (max-width: 1180px) {
+  #homepage_wrapper #homepage_personal_info {
+    display: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+  #homepage_wrapper #homepage_events {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
